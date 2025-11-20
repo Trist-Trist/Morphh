@@ -3,12 +3,37 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <main class="relative flex justify-center items-center min-h-screen w-full">
-    <div class="flex gap-8">
-      <img class="h-20 w-auto object-contain" src="/portræt1.png" alt="Portræt 1" />
-      <img class="h-20 w-auto object-contain" src="/portræt2.png" alt="Portræt 2" />
-      <img class="h-20 w-auto object-contain" src="/portræt3.png" alt="Portræt 3" />
-      <img class="h-20 w-auto object-contain" src="/portræt4.png" alt="Portræt 4" />
+  <main class="flex justify-center items-center min-h-screen w-full p-4">
+    <div class="flex flex-wrap justify-center gap-20">
+      
+      <div class="flex flex-col items-center">
+        <img class="h-[50vh] max-w-[25vw] object-contain" src="/portræt1.png" alt="Portræt 1" />
+        <h2 class="text-white archivo-black-regular text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-4">
+          GUSTAV
+        </h2>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img class="h-[50vh] max-w-[25vw] object-contain" src="/portræt2.png" alt="Portræt 2" />
+        <h2 class="text-white archivo-black-regular text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-4">
+          MATHIAS
+        </h2>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img class="h-[50vh] max-w-[25vw] object-contain" src="/portræt3.png" alt="Portræt 3" />
+        <h2 class="text-white archivo-black-regular text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-4">
+          CHARLOTTE
+        </h2>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img class="h-[50vh] max-w-[25vw] object-contain" src="/portræt4.png" alt="Portræt 4" />
+        <h2 class="text-white archivo-black-regular text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-4">
+          TRISTAN
+        </h2>
+      </div>
+
     </div>
   </main>
 </Layout>
