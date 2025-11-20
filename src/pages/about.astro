@@ -3,11 +3,31 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<main>
-        <div class="grid col-span-2 row-span-2">
-<video autoplay muted loop playsinline class="z-10 w-screen top-0 ">
-    <source src="/Export.mp4" type="video/mp4" />
-  </video>	
-  </div>
+  <main class="grid grid-cols-2 h-screen">
+    
+    <!-- VENSTRE: Video -->
+    <div class="relative  flex items-center justify-center">
+      <video 
+        autoplay 
+        loop 
+        playsinline 
+        class="w-full h-full"
+      >
+        <source src="/Export.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- HØJRE: Tekst -->
+    <div class="p-10 grid items-center">
+        <h2 class="text-white archivo-black-regular text-6xl self-end mb-8">Brand Manifest</h2>
+      <p class="text-white archivo-black-regular text-2xl self-start leading-8">
+        At MORPH, we believe that transformation begins with intention. Like the butterfly that inspires our name, we move with purpose through every stage.
+We are a team of four creators, four wings working in harmony. Each wing carries its own strength, but together we create momentum — from the earliest idea to a final solution ready to take flight.
+Transformation isn’t just a concept to us, it’s our nature.
+Morphing is not only what we do — it’s how we think. We shape ideas through deliberate steps, merging design with development to create solutions that are distinct, meaningful, and made to last. No two outcomes look alike, because no two clients or challenges are alike.
+And we believe in the butterfly effect: that even the smallest player can create change far bigger than themselves. Small, intentional actions shape everything we build — from code, to visuals, to the relationship we form with the people we work with.
+      </p>
+    </div>
+
   </main>
 </Layout>
