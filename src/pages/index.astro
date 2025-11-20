@@ -1,11 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<main>
-<video autoplay muted loop playsinline class="z-10 w-screen top-0">
-    <source src="/smallbutterfly.mp4" type="video/mp4" />
-  </video>	
+  <main>
+    <video autoplay muted loop playsinline class="z-10 w-screen top-0">
+      <source src="/smallbutterfly.mp4" type="video/mp4" />
+    </video>
   </main>
+  <div class="absolute min-h-screen top-[80vh]">
+    <p class="text-white archivo-black-regular text-3xl z-30 ml-20">
+      LESS WORDS.
+    </p>
+    <p class="text-white archivo-black-regular text-3xl z-30 ml-30">
+      MORE ACTION.
+    </p>
+  </div>
 </Layout>
